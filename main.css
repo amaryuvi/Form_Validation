@@ -1,0 +1,24 @@
+input.invalid, textarea.invalid{
+    border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+    border: 2px solid green;
+}
+
+input:focus.invalid {
+    border: 1px solid red;
+}
+.form-control {
+    width: 400px;
+}
+body {
+    padding: 10px;
+}
+h3 {
+    text-align: center;
+}
+input[type="radio"]{
+    display:inline;
+    padding-left: 40px;
+}

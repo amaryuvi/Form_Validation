@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h3>Employee Application Form</h3>
+    <form id="application_form">
+        <div>
+            <label for="firstname">First Name</label>
+            <input class="form-control" type="text" id="firstname" autocomplete="off" required> 
+            <span id="firstNameError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <label for="fullname">Full Name</label>
+            <input class="form-control" type="text" id="fullname" autocomplete="off" required>        
+            <span id="fullNameError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <label for="designation">Designation</label>
+            <input class="form-control" type="text" id="designation" autocomplete="off" required>
+            <span id="designationError" class="spanHide"></span>               
+        </div>
+        <br>
+        <div>
+            <label for="employeeCode">Employee Code</label>
+            <input class="form-control" type="text" id="employeeCode" autocomplete="off" required>        
+            <span id="employeeCodeError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <label for="bloodGroup">Blood Group</label>
+            <input class="form-control" type="text" id="bloodGroup" autocomplete="off" required>        
+            <span id="bloodGroupError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <label for="reason">Reason for Issue&nbsp;&nbsp;&nbsp;</label>
+            <input type="radio" name="reason" value="New Employee">New Employee&nbsp;&nbsp;
+            <input type="radio" name="reason" value="Lost">Lost&nbsp;&nbsp;
+            <input type="radio" name="reason" value="Defaced">Defaced&nbsp;&nbsp;
+            <input type="radio" name="reason" value="Conversion">Conversion&nbsp;&nbsp;
+            <input type="radio" name="reason" value="Designation Change">Designation Change&nbsp;
+        </div>
+        <br>
+        <div>
+            <label for="dateOfEmployment">Date of Employment</label>
+            <input  class="form-control" type="date" id="dateOfEmployment" required>
+            <span id="dateOfEmploymentError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Id(Virtusa):</label>
+            <input  class="form-control" type="email" id="email" autocomplete="off" pattern = "[a-z0-9._]+@[virtusa.-]+\.[com]{2,3}$" required>
+            <span id="emailIdError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <label for="mobileNumber">Mobile Number:</label>
+            <input  class="form-control" type="text" autocomplete="off" minlength="10" maxlength="10" pattern="[0-9]" id="mobileNumber" required>
+            <span id="mobileNumberError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <label for="emergencyContactNumber">Emergency Contact Number:</label>
+            <input  class="form-control" type="text" autocomplete="off" minlength="10" maxlength="10" pattern="[0-9]" id="mobileNumber" required>
+            <span id="emergencyContactNumberError" class="spanHide"></span>       
+        </div>
+        <br>
+        <div>
+            <br>
+            <br>
+            <label for="signatureOfEmployee">Signature of Employee:</label>
+        </div>
+        <br>
+        <div>
+            <button onclick="formSubmit()" class="btn btn-primary">Submit</button>        
+        </div>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
